@@ -1,9 +1,5 @@
-import pytest
 import allure
-from selenium import webdriver
 from pages.base_page import BasePage
-from locators.scooter_page_locators import ScooterPageLocators
-from constants import Constants
 
 
 class ScooterPage(BasePage):

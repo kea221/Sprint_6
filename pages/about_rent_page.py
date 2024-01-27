@@ -32,3 +32,12 @@ class AboutRentPage(BasePage):
     @allure.step("Кликнуть на кнопку подтверждения заказа - 'Да'")
     def click_yes(self):
         return self.find_element(AboutRentLocators.YES_BUTTON).click()
+
+    @allure.step("Заполнить форму заказа 'Про аренду' и подтвердить заказ")
+    def fill_about_rent_form(self, date, number_of_days, color, comment):
+        self.choose_date(date)
+        self.choose_rental_period(number_of_days)
+        self.choose_color(color)
+        self.enter_comment(comment)
+        self.click_order()
+        return self.click_yes()

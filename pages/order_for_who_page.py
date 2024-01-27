@@ -29,3 +29,12 @@ class OrderForWho(BasePage):
     @allure.step("Кликнуть на кнопку 'Далее'")
     def click_on_go_button(self):
         return self.find_element(OrderForWhoLocators.BUTTON_GO).click()
+
+    @allure.step("Заполнить форму заказа 'Для кого самокат' и кликнуть 'Заказать'")
+    def fill_order_for_who_form(self, name, last_name, address, station, number):
+        self.enter_name(name)
+        self.enter_last_name(last_name)
+        self.enter_address(address)
+        self.choose_metro_station(station)
+        self.enter_number(number)
+        return self.click_on_go_button()

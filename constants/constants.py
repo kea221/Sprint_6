@@ -26,5 +26,11 @@ class Constants:
     order_form = [("Саша", "Пушкин", "Ивантеевская улица, 17к1", OrderForWhoLocators.STATION_1, "89505557896"),
                   ("Антоша", "Чехонте", "Фролов переулок, 2", OrderForWhoLocators.STATION_8, "89991234567")]
 
-    about_rent = [(AboutRentLocators.DATE_1, AboutRentLocators.NUMBER_OF_DAYS_3, AboutRentLocators.BLACK, "Комментарий для курьера"),
-                  (AboutRentLocators.DATE_2, AboutRentLocators.NUMBER_OF_DAYS_1, AboutRentLocators.GREY, "")]
+    about_rent = [(AboutRentLocators.TODAY, AboutRentLocators.NUMBER_OF_DAYS_3, AboutRentLocators.BLACK, "Комментарий для курьера"),
+                  (AboutRentLocators.OTHER_DAY, AboutRentLocators.NUMBER_OF_DAYS_1, AboutRentLocators.GREY, "")]
+
+    name = "Альбус"
+    last_name = "Дамблдор"
+    address = "Фрунзенская набережная, 46"
+    station = OrderForWhoLocators.STATION_1
+    number = "89994561223"

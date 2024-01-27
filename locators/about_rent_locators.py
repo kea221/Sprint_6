@@ -6,9 +6,9 @@ class AboutRentLocators:
 
     DATE_FIELD = (By.XPATH, "//input[@placeholder='* Когда привезти самокат']")  # поле ввода/выбора даты
     CALENDAR = (By.CLASS_NAME, "react-datepicker__month-container")  # выпадающий календарь
-    DATE_1 = (By.XPATH, "//div[@class='react-datepicker__day react-datepicker__day--029']")  # 29.01.2024
-    DATE_2 = (By.XPATH, "//div[@class='react-datepicker__day react-datepicker__day--030']")  # 27.01.2024
-
+    TODAY = (By.XPATH, "//div[contains (@class, 'react-datepicker__day--today')]")  # сегодняшний день в календаре
+    # первый день следующей недели (считая от сегодняшнего дня)
+    OTHER_DAY = (By.XPATH, "//div[contains (@class, 'react-datepicker__day--today')]/parent::div/following-sibling::div/div")
     RENTAL_PERIOD_FIELD = (By.CLASS_NAME, "Dropdown-placeholder")  # поле выбора срока аренды
     RENTAL_PERIOD_MENU = (By.CLASS_NAME, "Dropdown-menu")  # выпадушка со сроками аренды
     NUMBER_OF_DAYS_3 = (By.XPATH, "//div[@class='Dropdown-option' and text()='трое суток']")  # трое суток

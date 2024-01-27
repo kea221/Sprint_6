@@ -1,7 +1,6 @@
 import pytest
 import allure
-from constants import Constants
-from locators.scooter_page_locators import ScooterPageLocators
+from constants.constants import Constants
 from pages.scooter_page import ScooterPage
 
 
